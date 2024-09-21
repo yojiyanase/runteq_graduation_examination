@@ -30,3 +30,6 @@ MVPリリース：　シミュレーションに使用するデータの取得�
 
 ■ 機能の実装方針予定
 Investing.com（https://www.investing.com/indices/us-spx-500-historical-data）からCSVでデータを取得し、そのデータを参照する形で、グラフを作成する方向
+
+■　画面遷移図(Figma)
+https://www.figma.com/design/yh13dTwXMKfQRXlMDk45bd/graduation_examination?node-id=0-1&node-type=canvas&t=yvRISyoco0hhJMGR-0
