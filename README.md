@@ -1,24 +1,21 @@
-# README
+README
+■サービス概要 ユーザーが、自分が持っているインデックスファンド（指数に連動する投資信託）の指数（S&P500など）と、毎月の積立金額（月１万円など）を選択して、 過去の投資期間（1995年から1999年など）を指定すると、資産の変動がグラフで表示される（例えば、S&P５００を毎月１万円積み立てて、 値動きが1990年から1995年の相場通りに動いた場合、資産の増減がどのようになるか表示する）。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+■ このサービスへの思い・作りたい理由 社会人になって以降、（積立）NISAを利用してインデックスファンドによる資産形成を行っている。継続すると将来いくらになるかの目安がわかる積立シミュレーションはモチベーションにもつながることから、不定期で利用している。ただ、金融庁や証券会社が提供するシミュレーションは、右肩あがりで毎年資産が増えていくかのように表示され、現実と乖離している印象がある。過去の指数の値動きに沿って資産の増減を図示することで、暴落・暴騰・年単位の低迷などが起こりうることをグラフ上で見えるようにしたい
 
-Things you may want to cover:
+（参考）金融庁 https://www.fsa.go.jp/policy/nisa2/tsumitate-simulator/
 
-* Ruby version
+■ ユーザー層について インデックスファンドによる資産形成を行っている（または検討している）人 提供サービスが、インデックスファンドによる資産形成に関心がある人に向けた内容（インデックスファンドによる資産の増減を見える化、擬似体験する内容）であるため
 
-* System dependencies
+■サービスの利用イメージ ユーザーは自分の持っているインデックスファンドのシミュレーションを通じて暴落期などリアルな値動きと資産の増減を疑似体験できる
 
-* Configuration
+■ ユーザーの獲得について シミュレーションはログイン不要で誰でも使えるようにすることを想定している。指数の種類を増やしたり対応する為替を増やすことで幅広いユーザーのニーズに対応したい
 
-* Database creation
+■ サービスの差別化ポイント・推しポイント 実際の値動きと積立を重ね合わせることで、既存のシミュレーションサービスと比べて、よりリアルに資産の増減を疑似体験できる
 
-* Database initialization
+■ 機能候補 MVPリリース：　シミュレーションに使用するデータの取得機能、毎月定額（ドル建て）で購入した場合の金額を計算する機能、グラフに加工する機能 本リリース：　日本株式市場の指数を追加(日経平均など)、円建てで積み立てた場合の計算機能（当時の為替レートでドルに交換して購入した場合を想定して計算する）
 
-* How to run the test suite
+■ 機能の実装方針予定 Investing.com（https://www.investing.com/indices/us-spx-500-historical-data）からCSVでデータを取得し、そのデータを参照する形で、グラフを作成する方向
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Figmaリンク
+https://www.figma.com/design/yh13dTwXMKfQRXlMDk45bd/graduation_examination?node-id=0-1&m=dev&t=YDEy305hGp6etdrE-1
