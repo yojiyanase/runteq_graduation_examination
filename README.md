@@ -31,5 +31,10 @@ MVPリリース：　シミュレーションに使用するデータの取得�
 ■ 機能の実装方針予定
 Investing.com（https://www.investing.com/indices/us-spx-500-historical-data）からCSVでデータを取得し、そのデータを参照する形で、グラフを作成する方向
 
+<<<<<<< HEAD
+■ ER図
+https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=%E5%8D%92%E6%A5%AD%E8%A9%A6%E9%A8%93.drawio#R%3Cmxfile%3E%3Cdiagram%20name%3D%22%E3%83%9A%E3%83%BC%E3%82%B81%22%20id%3D%22OiyhNyXQ7Ykj_PYa7mWI%22%3E7VlRb9owEP41SN3DJkIaoK9Ju1YalTaYtmkvlRsfiSXHjhxToL9%2B58QhCYEC0lqqgoSE%2Ffl8tu8%2B3yc5HTdIFreKpPG9pMA7vS5ddNzrTq%2Fn9C%2B7%2BGeQZYH0B%2F0CiBSj1qgCJuwZLGjnRTNGIWsYaim5ZmkTDKUQEOoGRpSS86bZVPLmqimJoAVMQsLb6G9GdVygw96gwu%2BARXG5stO%2FKkYSUhrbk2QxoXJeg9ybjhsoKXXRShYBcBO8Mi7FvK9bRlcbUyD0PhP8p5m6D%2F7%2BCMiN%2B0eN7sL78eSz9fJE%2BMweOJj8yuyG9bKMAu49NU1NHg3kZ5oobZPldhHA8GvCBCgEnLzPOUkzlpsXSMw4HZGlnOnSUdnzp2wBdFzkythi2kbozHSN8yk6n9jNmGHCWSSwHeLJzYq%2Bggz3MiKZthaxTrhttsNUnhmUhkUNsmG7BZmAVks0saNDm0FL4YHtzis%2BOKVJXOeCZ0FiORitPK8WGyNniYjwaKvVLrs7lxtsWM1dW4xwjI0gGnw5EzSrUwMbtWNWUE6YA8jTc9v0eZk6Y3MB%2FFgq9mwIw22C63TK%2B3OWcCLwZhG6BvkyryQ5LRjngeTScE5IAS3aGSOqZPqTqAi0BVLJhM5j5Pn4w6gF3S9ex8O9Bth3qj7%2BjLnSgRSZVkhv4wOQZXMwTPO1TK1TDtPSv7IpMe1HqbVMthLxxRu5m53LZuJ30XGdIHU2NphxOA16LRp8%2F7aVCBgBzQivmJ9XD1O8SZW2DbndGO1VhNdDv14zJAZ0yvP6GzNKAeuHP4%2BZhklKQmM0R%2F3aVTl23ILdKavlyD0wRRsKxoHe3qQiuC0q4ITjUqGUi8LWzzDhTESjYmZ%2FjSveu%2BHKYvv19v4rd%2FZy9wbk8c5ispeYdF9RTPrHFpP%2B%2FiR4m%2BoBlJX%2BXldHvL1z9dFVZNDiQKoknYX6QZAELiZaYf3%2B9N5V5T0w5eQ0ZHjWkKNryNWxNeTqZDVkuHeuPrqGlO%2BHNRIomALGL4SHBO96fHGNGzhhFdmfKyenIs75Xev4MuL0jq0jTvtd61SExDm%2Faa1C0X7SShUL4eIaQpYQfsIScgBLPpCGYLf6aleYV98%2B3Zt%2F%3C%2Fdiagram%3E%3C%2Fmxfile%3E
+=======
 ■　画面遷移図(Figma)
 https://www.figma.com/design/yh13dTwXMKfQRXlMDk45bd/graduation_examination?node-id=0-1&node-type=canvas&t=yvRISyoco0hhJMGR-0
+>>>>>>> create_screen_transition_diagram2
