@@ -119,6 +119,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.1)
     msgpack (1.7.2)
+    mysql2 (0.5.6)
     net-imap (0.4.14)
       date
       net-protocol
@@ -132,6 +133,8 @@ GEM
     nokogiri (1.16.7-aarch64-linux)
       racc (~> 1.4)
     nokogiri (1.16.7-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.7-x86_64-linux)
       racc (~> 1.4)
     psych (5.1.2)
       stringio
@@ -195,6 +198,7 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.7.3-aarch64-linux)
     sqlite3 (1.7.3-arm64-darwin)
+    sqlite3 (1.7.3-x86_64-linux)
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.1)
@@ -223,6 +227,7 @@ GEM
 PLATFORMS
   aarch64-linux
   arm64-darwin-23
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -230,6 +235,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  mysql2
   puma (~> 5.0)
   rails (~> 7.0.8, >= 7.0.8.2)
   redis (~> 4.0)
