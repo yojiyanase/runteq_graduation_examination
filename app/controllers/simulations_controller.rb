@@ -3,4 +3,8 @@ class SimulationsController < ApplicationController
 
   end
 
+  def input_form
+
+  end
+
 end

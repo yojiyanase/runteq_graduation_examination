@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   get 'simulations', to: 'simulations#index'
+
+  get 'simulations/input_form'
+
 end
