@@ -19,7 +19,7 @@
 </div>
 
 <div class="input_form" >
-  <%= form_with(model: @simulation, local: true) do |form| %>
+  <%= form_with(model: @simulation, local: true, url: simulations_calculate_path, method: :post) do |form| %>
     <div class="choosing_fund" >
       <div class="choosing_fund_label" >
         <%= form.label :index_fund, '積立指数', class: "choosing_fund_label_content" %>
