@@ -1,20 +1,27 @@
-# SQLite. Versions 3.8.0 and up are supported.
-#   gem install sqlite3
-#
-#   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem "sqlite3"
-#
+# config/database.yml
 default: &default
   adapter: mysql2
   encoding: utf8mb4
   charset: utf8mb4
   collation: utf8mb4_general_ci
-  username: admin
-  password: Yy121144169
-  host: database-1.cb2mw0404b0l.ap-northeast-1.rds.amazonaws.com
+  username: <%= ENV['DATABASE_USERNAME'] || 'admin' %>
+  password: <%= ENV['DATABASE_PASSWORD'] || 'Yy121144169' %>
+  host: <%= ENV['DATABASE_HOST'] || 'database-1.cb2mw0404b0l.ap-northeast-1.rds.amazonaws.com' %>
+  pool: 5
+  timeout: 5000
+
+development:
+  adapter: mysql2
+  encoding: utf8mb4
+  charset: utf8mb4
+  collation: utf8mb4_general_ci
+  username: root
+  password: password
+  host: db
+  database: runteq_development
   pool: 5
   timeout: 5000
 
 production:
   <<: *default
-  database: runteq_production # なんでもOK 
+  database: runteq_production
