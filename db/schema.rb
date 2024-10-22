@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_10_19_075808) do
+ActiveRecord::Schema[7.0].define(version: 2024_10_21_123456) do
   create_table "import_csvs", charset: "utf8mb4", force: :cascade do |t|
     t.string "product_name"
     t.date "date"
-    t.decimal "price", precision: 10
+    t.decimal "price", precision: 10, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
