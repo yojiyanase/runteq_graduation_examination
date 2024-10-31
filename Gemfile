@@ -45,6 +45,8 @@ gem 'mysql2', '~> 0.5.6'
 
 gem "sassc-rails"
 
+gem 'rails-i18n'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
