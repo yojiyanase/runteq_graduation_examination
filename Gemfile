@@ -47,6 +47,8 @@ gem "sassc-rails"
 
 gem 'rails-i18n'
 
+gem 'pry-byebug'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
