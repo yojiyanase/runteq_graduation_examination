@@ -36,10 +36,17 @@ class SimulationsController < ApplicationController
         stock_prices = @matching_data.map { |data| data[1] }
         @total_assets = calculate_assets(@simulation.monthly_amount, stock_prices)
 
+        @matching_date_data = ImportCsv.where(product_name: @simulation.index_fund)
+                                     .where("date >= ?", start_date)
+                                     .where("date <= ?", end_date)
+                                     .order(date: :asc)
+                                     .pluck(:date)
+
+      @matching_date_data = @matching_date_data.map { |date| date.strftime("%Y-%m") }
+
         # セッションに保存
         session[:simulation] = @simulation.attributes
-        session[:result] = { total_amount: total_amount }
-        session[:matching_data] = @matching_data
+        session[:matching_data] = @matching_date_data
         session[:total_assets] = @total_assets
         # @matching_data = @matching_data.attributes
   
@@ -58,7 +65,6 @@ class SimulationsController < ApplicationController
 
   def result
     @simulation = Simulation.new(session[:simulation])
-    @result = session[:result]
     @matching_datas = session[:matching_data]
     @total_assets = session[:total_assets]
   end
