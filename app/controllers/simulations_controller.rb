@@ -90,16 +90,16 @@ class SimulationsController < ApplicationController
       if monthly_amount >= price
         buy_count += (monthly_amount / price).to_i
         rest_money += monthly_amount % price
-        total_assets.push(price * buy_count + rest_money)
+        total_assets.push((price * buy_count + rest_money).to_i)
       else
         if monthly_amount + rest_money >= price
           buy_count += ((monthly_amount + rest_money) / price).to_i
           rest_money = monthly_amount + rest_money - price
-          total_assets.push(price * buy_count + rest_money)
+          total_assets.push((price * buy_count + rest_money).to_i)
         else
           buy_count = buy_count.to_i
           rest_money += monthly_amount
-          total_assets.push(price * buy_count + rest_money)
+          total_assets.push((price * buy_count + rest_money).to_i)
         end
       end
     end
